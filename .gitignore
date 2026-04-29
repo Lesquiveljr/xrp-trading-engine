@@ -1,0 +1,36 @@
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local notebooks/checkpoints
+.ipynb_checkpoints/
+*.ipynb
+Next.js
+
+# Local logs and generated analysis
+engine_logs/
+*.log
+*.err.log
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Node/Next artifacts
+xrp-dashboard/node_modules/
+xrp-dashboard/.next/
+xrp-dashboard/out/
+xrp-dashboard/.vercel/
+xrp-dashboard/.env*
+!xrp-dashboard/.env.example
+*.tsbuildinfo
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: xrp-engine-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app_v36_limit_order_planner:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: FRONTEND_ORIGINS
+        sync: false
+
