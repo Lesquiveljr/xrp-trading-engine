@@ -12,7 +12,7 @@ import {
   Zap,
 } from "lucide-react";
 
-const API_BASE = process.env.NEXT_PUBLIC_ENGINE_URL || "http://127.0.0.1:8000";
+const API_BASE = "";
 const DEFAULT_MODE = "balanced";
 const REFRESH_MS = 15000;
 const VIEW_OPTIONS = ["live", "review", "deep"] as const;
